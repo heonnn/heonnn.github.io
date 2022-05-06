@@ -1,0 +1,192 @@
+/* 페이지 글꼴 설정 */
+* {
+    font-family: 'NanumBarunPen';
+ }
+/* body */
+body {
+    /* border: 1px solid black; */
+    background-color: #f0f2f5;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* header */
+.navigation > ul {
+    width: 1024px;
+    position: fixed;
+    border-bottom: 1px solid rgb(199, 197, 197);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.navigation li {
+    padding: 30px 40px 5px 40px;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 23px;
+}
+.navigation a:link, .navigation a:visited {
+    color: black;
+}
+.navigation a:hover {
+    color: cadetblue;
+}
+.navigation #nowpage:link, .navigation #nowpage:visited {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+/* section */
+.title {
+    padding: 80px 0 30px;
+    text-align: center;
+}
+.title h1 {
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: 400;
+}
+#what {
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+}
+#who {
+    color: cadetblue;
+}
+section {
+    padding: 80px 40px;
+}
+
+/* profile */
+fieldset {
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 
+      0 2px 4px rgb(0 0 0 / 10%), 
+      0 8px 16px rgb(0 0 0 / 10%);
+}
+legend {
+    padding:10px 30px;
+    margin: 0 0 0 70px;
+    color: cadetblue;
+    font-size: 28px;
+}
+.profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.profile img {
+    transform: scale(0.7);
+}
+.profile ul {
+    padding: 30px;
+}
+.profile li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.profile span {
+    font-size: 18px;
+    padding: 0 0 0 100px;
+    color: black;
+}
+.profile .about {
+    font-weight: bold;
+}
+
+/* personality */
+.personality {
+    height: 300px;
+}
+.person {
+    padding: 10px 100px 10px 100px;
+}
+.person button {
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.person button:hover {
+    cursor: pointer;
+}
+.person .on {
+    font-size: 20px;
+    background-color: rgb(237, 237, 237);
+}
+#PorN {
+    background-color: rgb(237, 237, 237);
+    padding: 20px 20px;
+    list-style: none;
+    margin: 0;
+}
+
+/* 랜덤 스타일 */
+.random1 {font-size: 18px;}
+.random2 {font-size: 22px;}
+.random3 {font-size: 25px;}
+.random4 {font-size: 29px;}
+
+
+/* education & language */
+.edu-lang {
+    display: flex;
+}
+.edu-lang > fieldset {
+    width: 450px;
+    height: 230px;
+}
+
+/* education */
+.education ul {
+    padding: 30px 0 0 100px;
+    margin: 0;
+}
+.education li {
+    padding: 7px 0;
+}
+
+/* lnaguage */
+.language {
+    padding: 0 0 0 100px;
+}
+.language #save {
+    position: relative;
+    left: 210px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.lang {
+    padding: 5px;
+    display: inline-block;
+    text-align: left;
+    border-style: none;
+    font-size:18px;
+    background-color: white;
+    width: 105px;
+}
+
+.language .score {
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+}
+
+.star-score {
+    display: inline;
+}
+.star-score span {
+    color: #ccc;
+    cursor: pointer;
+}
+.star-score .on {
+    transition-duration: .5s;
+    color: black;
+}

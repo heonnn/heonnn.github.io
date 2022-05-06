@@ -1,0 +1,199 @@
+/* 페이지 글꼴 설정 */
+* {
+    font-family: 'NanumBarunPen';
+ }
+/* body */
+body {
+    /* border: 1px solid black; */
+    background-color: #f0f2f5;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* header */
+.navigation > ul {
+    width: 1024px;
+    position: fixed;
+    border-bottom: 1px solid rgb(199, 197, 197);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.navigation li {
+    padding: 30px 40px 5px 40px;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 23px;
+}
+.navigation a:link, .navigation a:visited {
+    color: black;
+}
+.navigation a:hover {
+    color: cadetblue;
+}
+.navigation #nowpage:link, .navigation #nowpage:visited {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+/* section s1 */
+.s1 {
+    padding: 200px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+.s1 > img {
+    height: 100px;
+}
+.middle  {
+    padding: 8px;
+}
+#title1 {
+    font-size: 30px;
+    color: cadetblue;
+}
+#title2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(20, 100, 102);
+}
+.end {
+    padding: 8px;
+    border-radius: 50%;
+    line-height: 95px;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    background-color: cadetblue;
+}
+
+/* animation */
+.man img {
+    width: 45px;
+    position: absolute;
+    transform: translate(-200px, 0);
+    opacity: 0;
+}
+#man1 {animation: run1 11s infinite;}
+#man2 {animation: run1 13s infinite linear;}
+#man3 {animation: run1 8s infinite linear 4s;}
+#man4 {animation: run1 6s infinite linear 3s;}
+#man5 {animation: run2 10s infinite 2s;}
+
+@keyframes run1 {
+    0% {transform: translate(-100px, 0); opacity: 1;}
+    100% {transform: translate(1100px, 0); opacity: 1;}
+}
+@keyframes run2 {
+    0% {transform: translate(-100px, 0); opacity: 1;}
+    50% {transform: translate(400px , 0); opacity: 1;}
+    100% {transform: translate(1100px, 0); opacity: 1;}
+}
+
+.info {
+    padding: 48px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.info fieldset {
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 
+    0 2px 4px rgb(0 0 0 / 10%), 
+    0 8px 16px rgb(0 0 0 / 10%);
+    width: 340px;
+}
+.f1 {
+    padding: 40px;
+}
+.f2 {
+    margin: 10px 0;
+    padding: 10px 40px;
+    height: 260px;
+}
+.f3 {
+    padding: 40px 40px 40px;
+}
+
+legend {
+    font-size: 20px;
+    padding: 5px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.head {
+    font-size: 25px;
+    color: cadetblue;
+}
+.f1 button {
+    background-color: #fff;
+    border-color: cadetblue;
+    cursor: pointer;
+}
+
+.f2  div {
+    padding: 5px;
+}
+.f2 div{
+    text-align: center;
+}
+.epName {
+    cursor: pointer;
+}
+.route {
+    padding: 0 0 40px;
+}
+.route span {
+    font-size: 20px;
+    padding: 0 15px;
+}
+.route button {
+    position: relative;
+    left: 10px;
+    border-color: cadetblue;
+    background-color: #fff;
+    cursor: pointer;
+}
+.pins {
+    height: 283px;
+    background-image: url(../images/map.jpg);
+    background-size:900px;
+    background-position: -510px -630px;
+    background-repeat: no-repeat;
+}
+.pin {
+    position: relative;
+    width: 30px;
+}
+
+#pin1 {top : 100px; left: 130px;}
+#pin2 {top : 150px; left: 70px;}
+#pin3 {top : 190px; left: 80px;}
+#pin4 {top : 210px; left: 100px;}
+#pin5 {top : 150px; left: 130px;}
+#pin6 {top : 90px; left: 120px;}
+#pin7 {top : 40px; left: 60px;}
+#pin8 {top : 70px; left: -30px;}
+
+@keyframes locationColor {
+    50% {
+        background-color: cadetblue;
+        color: white;
+    }
+}
+.route .on {
+    animation: locationColor 2s;
+}
+@keyframes pinScale {
+    50% {
+        transform: scale(1.5);
+    }
+}
+.pin.on {
+    animation: pinScale 2s;
+}

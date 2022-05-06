@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/03_about_me.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+    <title>about me</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a id="nowpage" href="03_about_me.html">about me</a></li>
+                <li><a href="04_road_map.html">road map</a></li>
+                <li><a href="05_trip.html">trip</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="title">
+            <h1><span id="what">백엔드 개발자</span>를 지망하는 <span id="who">김정헌</span>입니다.</h1>
+        </article>
+        <article>
+            <fieldset>
+                <legend>profile</legend>
+                <div class="profile">
+                    <img src="./images/user.png" alt="user">
+                    <ul>
+                        <li><span class="about">Name.</span><span>김정헌(Kim Jeong Heon)</span></li>
+                        <li><span class="about">Birth.</span><span>June 29, 1994</span></li>
+                        <li><span class="about">Address.</span><span>서울시 관악구 신림동</span></li>
+                        <li><span class="about">Eamil.</span><span>najh0094@gmail.com</span></li>
+                        <li><span class="about">Tel.</span><span>010-5279-5981</span></li>
+                    </ul>
+                </div>
+            </fieldset>
+            <br><br>
+            <fieldset class="personality">
+                <legend>personality</legend>
+                <div class="person">
+                    <button id="positive">장점</button>
+                    <button id="negative" >단점</button>
+                    <ul id="PorN">
+                    </ul>
+                </div>
+            </fieldset>
+            <br><br>
+            <div class="edu-lang">
+                <fieldset>
+                    <legend>education</legend>
+                    <div class="education">
+                        <ul>
+                            <li>영남대학교 기계공학과 전공</li>
+                            <li>KH 정보교육원 JAVA기반 개발자 교육</li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>skill</legend>
+                    <div class="language">
+                        <button id="save">저장</button>
+                        <div id="java">
+                            <span class="lang">Java</span>
+                            <div class="star-score"></div>
+                        </div>
+                        <div id="db">
+                            <span class="lang">Database SQL</span>
+                            <div class="star-score"></div>
+                        </div>
+                        <div id="html-css">
+                            <span class="lang">HTML/CSS</span>
+                            <div class="star-score"></div>
+                        </div>
+                        <div id="js">
+                            <span class="lang">Javascript</span>
+                            <div class="star-score"></div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </article>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <script src="./javascript/03_about_me.js"></script>
+</body>
+</html>

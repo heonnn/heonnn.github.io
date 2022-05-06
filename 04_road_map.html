@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/04_road_map.css">
+   <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+   <title>road map</title>
+</head>
+<body>
+   <canvas id="canvas" width="1024px" height="1000px"></canvas>
+   <header>
+      <nav class="navigation">
+         <ul>
+            <li><a href="03_about_me.html">about me</a></li>
+            <li><a id="nowpage" href="04_road_map.html">road map</a></li>
+            <li><a href="05_trip.html">trip</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section class="s1">
+      <div class="step-animation">
+         <img class="left" id="foot0" src="./images/footleft.png" alt="step">
+         <img class="right" id="foot1" src="./images/footright.png" alt="step">
+         <img class="left" id="foot2" src="./images/footleft.png" alt="step">
+         <img class="right" id="foot3" src="./images/footright.png" alt="step">
+         <img class="left" id="foot4" src="./images/footleft.png" alt="step">
+         <img class="right" id="foot5" src="./images/footright.png" alt="step">
+         <img class="left" id="foot6" src="./images/footleft.png" alt="step">
+         <img class="right" id="foot7" src="./images/footright.png" alt="step">
+         <img class="left" id="foot8" src="./images/footleft.png" alt="step">
+         <img class="right" id="foot9" src="./images/footright.png" alt="step">
+      </div>
+      <div id="goal">
+         Jnior Developer
+      </div>
+   </section>
+   <section class="s2">
+      <div class="images">
+         <div id="step1">
+            <img src="./images/footstep.png" alt="step">
+            <span>step1. JAVA 공부</span>
+            <div class="add" onclick="addContent(this);">+</div>
+         </div>
+         <div id="step2">
+            <img src="./images/footstep.png" alt="step">
+            <span>step2. 자격증 취득</span>
+            <div class="add" onclick="addContent(this);">+</div>
+         </div>
+         <div id="step3">
+            <img src="./images/footstep.png" alt="step">
+            <span>step3. 관련된 기본개념</span>
+            <div class="add" onclick="addContent(this);">+</div>
+         </div>
+         <div id="step4">
+            <img src="./images/footstep.png" alt="step">
+            <span>step4. 사이드 프로젝트</span>
+            <div class="add" onclick="addContent(this);">+</div>
+         </div>
+      </div>
+      <div class="contents">
+         <div id="content1">
+            처음 개발자로써 입문할 때, 언어와 플랫폼의 선택은 굉장히 중요합니다.<br>
+            JAVA는 높은 점유율을 가지고 있고, 대체 가능한 언어들이 많아지고 있지만<br>
+            앞으로 오랫동안 강세를 유지할 것은 분명한 언어입니다.<br>
+            선택한 특정 언어에 집중하여 더욱 깊이있는 공부가 필요하다고 생각합니다.
+         </div>
+         <div id="content2">
+            국가 자격증이 개개인의 능력을 보증한다는 개념과 많이 동떨어져 있지만, 취득하는 과정에서 자료 구조, 알고리즘, 통신 등 <br>
+            비전공자가 컴퓨터 공학과 관련된 내용을 공부하는데 큰 도움이 될 것이라 생각합니다.
+         </div>
+         <div id="content3">
+            백엔드 개발자가 되어 서버 API 개발, DB 설계와 같은 업무를 할 때 백엔드 관련 지식으로는 충분하지 않습니다.<br>
+            프론트 엔드, API, 보안 등 여러가지 개념 공부가 업무에서의 높은 이해도와 커리어 확장을 가능케 한다고 생각합니다.<br>
+         </div>
+         <div id="content4">
+            회사의 업무를 메인으로 하면서 사이드 프로젝트를 진행하여<br>
+            부가적으로 다양한 스킬과 경험치를 쌓아<br>
+            광범위한 IT시장에서 뚜렷한 목표를 세울 것입니다.
+         </div>
+      </div>
+      <div class="arrow">
+         <img src="./images/arrow.png" alt="arrow">
+         <span>Senior Developer</span>
+      </div>
+   </section>
+   <br><br><br><br><br><br><br><br><br><br><br>
+   <script src="./javascript/04_road_map.js"></script>
+
+</body>
+</html>

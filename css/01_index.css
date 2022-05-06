@@ -1,0 +1,188 @@
+/* 페이지 글꼴 설정 */
+* {
+   font-family: 'NanumBarunPen';
+}
+/* body */
+body {
+   background-color: #f0f2f5;
+   width: 1024px;
+   margin: 0 auto;
+}
+
+/* section */
+/* ----------------------------------- */
+section {
+   display: flex;
+   justify-content: space-between;
+   padding: 150px 30px;
+}
+/* logoBox */
+.logoBox {
+   margin-top: 20px;
+}
+#hpName{
+   font-size: 55px;
+   text-decoration: none;
+}
+#hpName:link, #hpName:visited {
+   color: cadetblue;
+}
+.logoBox > span {
+   font-size: 30px;
+}
+/* loginBox */
+.loginBox {
+   box-shadow: 
+   0 2px 4px rgb(0 0 0 / 10%),
+   0 8px 16px rgb(0 0 0 / 10%);
+   background-color: white;
+   width: 370px;
+   height: 290px;
+   border-radius: 10px 10px;
+   text-align: center;
+}
+form {
+   padding: 10px 0 ;
+}
+input#id, input#pw, input#login {
+   border-color: #f0f2f5;
+   box-sizing: border-box;
+   margin: 8px;
+   width: 340px;
+   height: 50px;
+   border-radius: 5px 5px;
+   font-size: 15px;
+   padding-left: 15px ;
+}
+input#id:focus, input#pw:focus {
+   outline: 1px solid cadetblue;
+}
+input#login {
+   border-style: none;
+   background-color: rgb(152, 206, 208);
+   color: white;
+   font-size: 20px;
+}
+.autoBox {
+   position: relative;
+   right: 128px;
+   font-size: 12px;
+}
+input#login, .autoBox > * {
+   cursor: pointer;
+}
+input#login:hover {
+   background-color: cadetblue;
+   transition-duration: .5s;
+}
+ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+}
+.signupBox li:not(:last-child)::after, .infoBox li:not(:last-child)::after, .logoutBox li:not(:last-child):after {
+   content: "|";
+}
+.signupBox a, .infoBox a {
+   text-decoration: none;
+   font-size: 14px;
+   padding: 0 20px;
+}
+
+a:not(#hpName):link, a:not(#hpName):visited {
+   color: black;
+}
+/* ----------------------------------- */
+
+/* subMenu */
+/* ----------------------------------- */
+.slider input[type=radio] {
+   display: none;
+}
+.slider {
+   width: 300px;
+   height: 190px;
+   background-color: rgb(190, 223, 223);
+   border-radius: 10px 10px;
+   padding: 0;
+   margin: 30px auto 20px auto;
+}
+ul.subMenuList li{
+   position: absolute;
+   opacity: 0;
+   padding: 55px 0;
+   margin: 0;
+}
+ul.subMenuList a {
+   font-size: 40px;
+   font-weight: bold;
+   text-decoration: none;
+   
+}
+.logoutBox a {
+   text-decoration: none;
+   font-size: 14px;
+}
+#setting {
+   padding-right: 80px;
+}
+#logout {
+   padding-left: 100px;
+}
+
+.bullets {
+   position: relative;
+   top: 130px;
+   z-index: 2;
+}
+.bullets label {
+   display: inline-block;
+   border-radius: 50%;
+   background-color: rgba(129, 128, 128, 0.55);
+   width: 10px;
+   height: 10px;
+   margin: 0 10px;
+   cursor: pointer;
+}
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+   background-color: #fff;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+   background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+   background-color: #fff;
+}
+  
+.slider input[type=radio]:nth-child(1):checked~ul.subMenuList>li:nth-child(1){
+   opacity: 1;
+   transition: 1s;
+   z-index: 1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.subMenuList>li:nth-child(2){
+   opacity: 1;
+   transition: 1s;
+   z-index: 1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.subMenuList>li:nth-child(3){
+   opacity: 1;
+   transition: 1s;
+   z-index: 1;
+}
+ul.subMenuList a {
+   text-decoration: none;
+   font-size: 40px;
+}
+ul.subMenuList a:link, ul.subMenuList a:visited {
+   color: white;
+   font-weight: bold;
+}
+ul.subMenuList a:hover {
+   display: inline-block;
+   transform: scale(1.1);
+   transition-duration: .5s;
+}
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/05_trip.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+    <title>trip</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="03_about_me.html">about me</a></li>
+                <li><a href="04_road_map.html">road map</a></li>
+                <li><a id="nowpage" href="05_trip.html">trip</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="s1">
+        <img src="./images/cycling.png" alt="bicycle">
+        <div class="middle">
+            <div id="title1">12일 간의</div>
+            <div id="title2">자전거</div>
+        </div>
+        <div class="end">여행</div>
+    </section>
+    <section class="s2">
+        <article class="man">
+            <img id="man1" src="./images/man/man1.png" alt="bikeman">
+            <img id="man2" src="./images/man/man2.png" alt="bikeman">
+            <img id="man3" src="./images/man/man3.png" alt="bikeman">
+            <img id="man4" src="./images/man/man4.png" alt="bikeman">
+            <img id="man5" src="./images/man/man5.png" alt="bikeman">
+        </article>
+        <article class="info">
+                <div class="info-left">
+                    <fieldset class="f1">
+                        <legend>인원/기간</legend>
+                        <div class="head">인원</div>
+                        <span>김정헌 외 7명(총 8명) ------- </span>
+                        <button id="friendList">+ 목록보기</button>
+                        <br><br>
+                        <div class="head">기간</div>
+                        <span>2018.06.22 ~ 2018.07.03</span>
+                    </fieldset>
+                    <fieldset class="f2">
+                        <legend>에피소드</legend>
+                        <div class="episode1">
+                            <span class="epName" onclick="showEpisode(this);">episode 1</span>
+                            <div class="epContent"></div>
+                        </div>
+                        <div class="episode2">
+                            <span class="epName" onclick="showEpisode(this);">episode 2</span>
+                            <div class="epContent"></div>
+                        </div>
+                        <div class="episode3">
+                            <span class="epName" onclick="showEpisode(this);">episode 3</span>
+                            <div class="epContent"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="info-right">
+                    <fieldset class="f3">
+                        <legend>여행 경로</legend>
+                        <div class="route">
+                            <span class="location">대구</span> → <span class="location">청도</span> → <span class="location">밀양</span> → <span class="location">양산</span> →
+                            <span class="location">울산</span> → <span class="location">경주</span> → <span class="location">포항</span> → <span class="location">영천</span>
+                            <br><br>      
+                            <button id="showRoute">경로 확인하기</button>
+                        </div>
+                        <div class="pins">
+                            <img class="pin" id="pin1" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin2" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin3" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin4" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin5" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin6" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin7" src="./images/pin.png" alt="pin">
+                            <img class="pin" id="pin8" src="./images/pin.png" alt="pin">
+                        </div>
+                    </fieldset>
+                </div>
+        </article>
+
+    </section>
+    <script src="./javascript/05_trip.js"></script>
+
+</body>
+</html>

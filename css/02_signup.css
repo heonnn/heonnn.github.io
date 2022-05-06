@@ -1,0 +1,153 @@
+/* 페이지 글꼴 설정 */
+* {
+   font-family: 'NanumBarunPen';
+}
+
+/* body */
+body {
+   background-color: #f0f2f5;
+   width: 1024px;
+   text-align: center;
+   margin: 0 auto;
+}
+
+/* 제목 */
+h1 {
+   color: cadetblue;
+   margin: 50px 0 40px 0;
+   font-size: 40px;
+}
+/* 글자 크키 및 위치 조정 */
+label {
+   position: relative;
+   font-size: 16px;
+   display: block;
+   padding: 10px 0 5px 0;
+}
+label[for=id] {
+   right: 180px;
+}
+label[for=pw] {
+   right: 175px;
+}
+label[for=pw2] {
+   right: 155px;
+}
+label[for=userName] {
+   /* right: 240px; */
+   right: 188px;
+}
+label[for=gender] {
+   right: 188px;
+}
+label[for=birth-year] {
+   right: 180px;
+}
+
+/* 아이디 비밀번호 input box 스타일 */
+.idBox > input:not(#idCheck) {
+   box-sizing: border-box;
+   border-color: #f0f2f5;
+   height: 40px;
+   border-radius: 5px 5px;
+   font-size: 10px;
+   width: 400px;
+   font-size: 13px;
+   padding-left: 15px;
+}
+
+/* 아이디 중복체크 박스 */
+input#idCheck {
+   margin-top: 3px;
+   position: relative;
+   font-size: 11px;
+   left: 120px;
+}
+
+/* 성별 체크박스 */
+.genderBox > select {
+   border-color: #bbbdbe;
+   box-sizing: border-box;
+   border-radius: 5px 5px;
+   width: 400px;
+   height: 30px;
+   font-size: 15px;
+   padding-left: 20px;
+}
+span:not(#first, .birthdayBox > span) {
+   position: relative;
+   right: 165px;
+   font-size: 12px;
+   color: red;
+}
+#first {
+   position: relative;
+   right: 123px;
+   font-size: 12px;
+   color: red;
+}
+.birthdayBox > span {
+   position: relative;
+   right: 140px;
+   font-size: 12px;
+   color: red;
+}
+.birthdayBox > input {
+   border-radius: 5px 5px;
+   border-color: #f0f2f5;
+   display: inline-block;
+   width: 65px;
+   padding: 10px;
+   margin: 0 6px;
+}
+input#year {
+   width: 170px;
+}
+input#signupButton {
+   margin: 30px 0;
+   box-sizing: border-box;
+   border-style: none;
+   width: 400px;
+   height: 50px;
+   font-size: 20px;
+   background-color: rgb(152, 206, 208);
+   color: white;
+   border-radius: 10px 10px;
+}
+.inputBody {
+   background-color: white;
+   box-shadow: 
+      0 2px 4px rgb(0 0 0 / 10%), 
+      0 8px 16px rgb(0 0 0 / 10%);
+   border-style: none;
+   border-radius: 5%;
+   width: 440px;
+   padding: 30px;
+   margin: 0 auto;
+}
+footer {
+   padding: 40px;
+}
+input:hover, select:hover {
+   cursor: pointer;
+}
+input#signupButton:hover {
+   background-color: cadetblue;
+   transition-duration: .5s;
+}
+input:focus {
+   outline: 1px solid cadetblue;
+   border-style: none;
+}
+.spanMsg {
+   opacity: 0;
+}
+
+#back {
+   display: block;
+   cursor: pointer;
+   text-decoration: none;
+}
+#back:link, #back:visited {
+   color: black;
+}
